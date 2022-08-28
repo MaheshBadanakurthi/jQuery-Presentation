@@ -1,0 +1,11 @@
+.forEvents{
+    display:;
+}
+body{
+    align-items: center;
+    background-color: rgba(244, 145, 14, 0.25);
+    font-weight: 500;
+    font-size: 20px;
+    margin:100px;
+    
+}

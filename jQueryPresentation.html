@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Presentation</title>
+    <link rel="stylesheet" href="jQueryPresentation.css">
+</head>
+<body>
+    <h2>Agenda</h2>
+    <ul>
+        <li> Intro </li>
+        <li> Selectors and Filters </li>
+        <li> Add/Update HTML Elements </li>
+        <li> Add/Update Styles </li>
+        <li> Handling HTML Events </li>
+        <li> Making AJAX Calls  </li>
+    </ul>
+    <div>
+        <h2> Introduction </h2>
+        <ul>
+            <li>jQuery is developed by Google.</li>
+        <li> jQuery is a small, lightweight, and fast JavaScript library. </li>
+          <li> It is cross-platform and supports different types of browsers.</li> 
+           <li> jQuery means "write less do more".</li> 
+           <li>jQuery simplifies AJAX call and DOM manipulation. </li> 
+            <li>It improves the performance of an application.  </li>
+            <li>It uses mostly new features of new browsers.            </li>
+
+
+        </ul>
+        </div>
+        <div>
+
+
+        </div>
+        <h3>jQuery form </h3>
+        <h5>$(document).ready()</h5>
+        <li>The code inserted between $(document).ready() is executed only once when page is ready for JavaScript code to execute.  </li>
+        <h5>Example</h5>
+        <pre>$(document).ready(function() {  
+            $("p").css("color", "red");  
+            });  
+            </pre>
+
+       <a href="https://www.javatpoint.com/jquery-example"> Example Program</a>
+
+      <p>   </p>
+      <h3> jQuery Selectors </h3>
+      <li>jQuery Selectors are used to select and manipulate HTML elements. They are very important part of jQuery library.</li>
+      <li>selectors are used to select one or more HTML elements using jQuery and once the element is selected then you can perform various operation on that.</li>
+      <li>With jQuery selectors, you can find or select HTML elements based on their id, classes, attributes, types and much more from a DOM.</li>
+      <li>All jQuery selectors start with a dollor sign and parenthesis e.g. $(). It is known as the factory function.</li>
+     <pre> Inside the Factor Function($()) we can use Selectors like 
+        We may use Tag name          ex: $('p/div/span/b...')
+        We may use Tag ID            ex: $('here Idname')
+        We may use Tag class         ex: $('className')
+        We may use  * selector       ex: $('*') ---> it selects all elements.
+     </pre>
+     <p> We have different types of jQuery Selectors. <a href="https://www.javatpoint.com/jquery-selectors"> Click Here to know </a> </p>
+
+     <h2>Add/Update HTML Elements</h2>
+     <p>By the follwing ways we cann add html elements</p>
+     <li><b>append()</b> -Using this method we can inserts content at the end of that content</li>
+     <li> <b>prepend() </b>- Inserts content at the beginning of that content.</li>
+     <li>  <b>after()</b> - Inserts content at after  Means immiadiate bottom</li>
+     <li>   <b>before()</b> - Inserts content at before. Means immidiate Top</li>
+  <b id="change"> Examples </b><br>
+  <button id="am"> Click for Append</button>
+  <li> Here this is for append method</li>
+  <li> Here this is for prepend method</li>
+  <li> Here this is for after method</li>
+  <li> Here this is for before method</li>
+ <br><hr><br>
+   <h3>Add/Update Styles </h3>
+   <pre>To set a  CSS property we simply use,
+    <b> $("Tag/Id/..")css("propertyname","value");</b>  </pre>
+    <b>Example</b><br><br>
+    <i> $("p/div/idName/..").css("color","green") <sub> For single property</sub> </i> <br><br>
+    <i>$("p/div/idName/..").css({"color":"green","font-size":"100px","border":"3ps ridge green", ......}) <sub> For multiple Properties</sub> </i>
+
+<br>
+<h3>Handling HTML Events</h3>
+<p>jQuery events are the actions that can be detected by your web application.  An event shows the exact moment when something happens.</p>
+<pre>  These are some examples of events.
+
+   -->A mouse click
+   --> An HTML form submission
+   -->  A web page loading
+   --> A keystroke on the keyboard
+   --> Scrolling of the web page etc. <br>
+</pre>
+  <div class="forEvents">
+    <fieldset>
+    <div>
+        <h4>Mouse Events</h4>
+        <li> click  </li>
+        <li>  dblclick </li>
+        <li> mouseenter   </li>
+        <li>mouseleave   </li>
+        <b> example</b>
+   <pre> $(document).ready(function(){
+   $("p/.."). click/mouseenter/..(function(){
+             $("id/..").remove/append/..();
+            });
+          });</pre>
+    </div>
+</fieldset>
+<fieldset>
+    <div>
+        <h4>Keyboard Events</h4>
+        <li> keyup  </li>
+        <li>  keydown </li>
+        <li> keypress   </li>
+    </div>
+</fieldset>
+<fieldset>
+    <div>
+        <h4>form  Events</h4>
+        <li> submit  </li>
+        <li>  change </li>
+        <li> blur   </li>
+        <li> focus   </li>
+    </div>
+</fieldset>
+<fieldset>
+    <div>
+        <h4>window/Documnet Events</h4>
+        <li> load  </li>
+        <li>  unload </li>
+        <li> scroll   </li>
+        <li>resize </li>
+    </div>
+</fieldset>
+  </div>
+  <p> There are multiple events are there <a href="https://www.javatpoint.com/jquery-events"> Click here</a> </p>
+<br>
+<div>
+    <h3> Making AJAX calls </h3>
+    <p>The ajax() method in jQuery performs an AJAX request. It sends an asynchronous HTTP request to the server. JQuery provides a rich set of AJAX methods for developing web applications. It is widely used for the requests.</p>
+    <p>The syntax of using the ajax() method is.  </p>
+    <b>$.ajax({name:value, name:value, ... })  </b>
+    <p> There are number of AJAX parameters are there.</p>
+    <sub><a href="https://www.javatpoint.com/jquery-ajax-method">  click here to check </a> </p></sub>
+
+</div>
+
+
+
+  <script type="text/javascript" src="jQueryPresentation.js">  </script>
+</body>
+</html>
