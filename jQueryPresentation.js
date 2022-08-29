@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $("am").click(function(){
-      $("b").after(" <b>Appended text</b>.");
-      //$('b').remove(); // After the click b tag will remove.
+    $("button").click(function(){
+      $("#append01").after(" <b>Mahesh Badanakurthi</b>.");
+      //$('p').remove(); // After the click b tag will remove.
     });
 });
-document.getElementById('change').innerHTML="Ex";
+// document.getElementById('change').innerHTML="Ex";
