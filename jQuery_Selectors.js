@@ -1,6 +1,7 @@
+// mouse enter
 $(document).ready(function(){
     $("h3").mouseenter(function(){
-        $("h3").css({"border-bottom":"2px dashed green","width":"100px","background-color":"navy","color":"red"})
+        $("h3").css({"border-bottom":"2px dashed green","width":"100px","background-color":"yellow","color":"red"})
     })
 });
 
